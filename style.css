@@ -25,6 +25,7 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #trybewarts-forms-logo {
@@ -32,5 +33,24 @@ main {
   height: 500px;
 }
 
+#input-name {
+  display: flex;
+  width: 40%;
+  margin-right: 5px;
+}
 
+#input-lastname {
+  display: flex;
+  width: 40%;
+}
 
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#input-email {
+  display: flex;
+  width: 40%;
+  margin-right: 5px;
+}
