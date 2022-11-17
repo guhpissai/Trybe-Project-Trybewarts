@@ -44,7 +44,7 @@ main {
   width: 40%;
 }
 
-div {
+.div-form {
   display: flex;
   flex-wrap: wrap;
 }
@@ -55,3 +55,7 @@ div {
   margin-right: 5px;
 }
 
+.container-check {
+  display: flex;
+  flex-direction: column;
+}
