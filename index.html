@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <header class="header">
+    <div class="header-bg">
+      <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logotipo Trybewarts">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login" action="" method="get">
@@ -21,13 +22,14 @@
           <button id="button" type="submit">Entrar</button>
         </form>
     </header>
+    </div>
     <main class="form">
       <form id="evaluation-form">
         <div class="div-form">
           <input type="text" name="name" id="input-name" placeholder="Nome">
           <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
           <input type="email" name="email" id="input-email" placeholder="Email">
-        <label>
+        <label id="label-house">
           Casa:
           <select name="house" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -37,16 +39,18 @@
           </select>
         </label>
       </div>
-      <label id="label-family" for="name">Qual sua família?</label>
-      <div>
-        Frontend<input type="radio" id="front" name="family" value="Frontend">
+      <label for="name">Qual sua família?</label>
+      <div class="label-family">
+        <div>
+          Frontend<input type="radio" id="front" name="family" value="Frontend">
+        </div>
+        <div>
+          Backend<input type="radio" id="back" name="family" value="Backend">
+        </div>
+        <div>
+          FullStack<input type="radio" id="full" name="family" value="FullStack">  
+        </div>   
       </div>
-      <div>
-        Backend<input type="radio" id="back" name="family" value="Backend">
-      </div>
-      <div>
-        FullStack<input type="radio" id="full" name="family" value="FullStack">  
-      </div>   
       <div class="container-check">
         <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
         <div id="div-checkbox">
