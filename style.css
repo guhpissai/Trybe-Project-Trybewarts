@@ -60,6 +60,6 @@ main {
   flex-direction: column;
 }
 
-/* .form-answer {
+#form-data {
   display: none;
-} */
+}

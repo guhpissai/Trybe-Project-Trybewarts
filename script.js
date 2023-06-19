@@ -34,14 +34,20 @@ const submitBtn = document.getElementById('submit-btn');
 
 let familyResult = '';
 let avaliation = '';
+let selectValue = 'Gitnória';
 const contentArray = [];
-const nameValue = document.getElementById('input-name').value;
-const lastName = document.getElementById('input-lastname').value;
-const house = document.getElementById('house').value;
+const nameValue = document.getElementById('input-name');
+const lastName = document.getElementById('input-lastname');
+const emailInput = document.getElementById('input-email');
+const house = document.getElementById('house');
 const family = document.querySelectorAll('input[name=family]');
 const content = document.querySelectorAll('.subject');
 const avaliationForm = document.querySelectorAll('input[name=rate]');
 const commentaryInput = document.getElementById('textarea');
+
+house.addEventListener('change', () => {
+  selectValue = house.value;
+});
 
 const checkedFamily = () => {
   for (let i = 0; i < family.length; i += 1) {
@@ -74,12 +80,16 @@ submitBtn.addEventListener('click', (event) => {
   checkedFamily();
   checkedAvaliation();
 
-  document.querySelector('.name').innerHTML = `${nameValue} ${lastName}`;
-  document.querySelector('.house').innerHTML = `Casa: ${house}`;
-  document.querySelector('.family').innerHTML = `Familia: ${familyResult}`;
-  document.querySelector('.content').innerHTML = `Conteudo: ${contentArray.join(', ')}`;
+  console.log(nameValue);
+
+  document.querySelector('.name').innerHTML = `Nome: ${nameValue.value} ${lastName.value}`;
+  document.querySelector('.email').innerHTML = `Email: ${emailInput.value}`;
+  document.querySelector('.house').innerHTML = `Casa: ${selectValue}`;
+  document.querySelector('.family').innerHTML = `Família: ${familyResult}`;
+  document.querySelector('.content').innerHTML = `Matérias: ${contentArray.join(', ')}`;
   document.querySelector('.avaliation').innerHTML = `Avaliação: ${avaliation}`;
-  document.querySelector('.commentary').innerText = `Comentario: ${commentaryInput.value}`;
+  document.querySelector('.commentary').innerText = `Observações: ${commentaryInput.value}`;
 
   document.getElementById('evaluation-form').style.display = 'none';
+  document.getElementById('form-data').style.display = 'block';
 });
