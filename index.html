@@ -21,20 +21,23 @@
           <button id="button" type="submit">Entrar</button>
         </form>
     </header>
-    <main>
+    <main class="form">
       <form id="evaluation-form">
         <div class="div-form">
           <input type="text" name="name" id="input-name" placeholder="Nome">
           <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
           <input type="email" name="email" id="input-email" placeholder="Email">
-        <select name="house" id="house">
-          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-          <option id="corvinode-house" value="Corvinode">Corvinode</option>
-          <option id="pytherina-house" value="Pytherina">Pytherina</option>
-        </select>
+        <label>
+          Casa:
+          <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </label>
       </div>
-      <label id="label-family" for="">Qual sua família?</label>
+      <label id="label-family" for="name">Qual sua família?</label>
       <div>
         Frontend<input type="radio" id="front" name="family" value="Frontend">
       </div>
@@ -82,6 +85,14 @@
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
     </main>
+    <section class="form-answer">
+      <h2 class="name">Nome e sobrenome</h2>
+      <p class="house">Casa</p>
+      <p class="family">Familia</p>
+      <p class="content">Conteudo</p>
+      <p class="avaliation">Avaliacao</p>
+      <p class="commentary">Comentario</p>
+    </section>
     <footer>
       <p>Direitos reservados à Trybewarts©</p>
     </footer>
