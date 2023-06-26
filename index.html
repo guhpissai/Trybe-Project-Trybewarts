@@ -39,8 +39,7 @@
           </select>
         </label>
       </div>
-      <label for="name">Qual sua família?</label>
-      <div class="label-family">
+      <label for="name" id="label-family">Qual sua família?</label>
         <div>
           Frontend<input type="radio" id="front" name="family" value="Frontend">
         </div>
@@ -50,7 +49,6 @@
         <div>
           FullStack<input type="radio" id="full" name="family" value="FullStack">  
         </div>   
-      </div>
       <div class="container-check">
         <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
         <div id="div-checkbox">
@@ -75,9 +73,9 @@
         9<input type="radio"  name="rate" value="9">
         10<input type="radio" name="rate" value="10">
       </div>
-      <label class="textarea" for="">Deixe seu comentário:</label>
+      <label class="textarea" rows="4" for="">Deixe seu comentário:</label>
       <div>
-        <textarea name="comment" id="textarea" cols="30" rows="10" maxlength="500"
+        <textarea name="comment" id="textarea" cols="50" rows="10" maxlength="500"
         minlength="0"></textarea>
       </div>
       <div id="counter">500</div>
@@ -87,17 +85,17 @@
       </div>
       <button id="submit-btn" type="submit" disabled>Enviar</button>
       </form>
+      <section id="form-data">
+        <p class="name">Nome e sobrenome</p>
+        <p class="email">email</p>
+        <p class="house">Casa</p>
+        <p class="family">Familia</p>
+        <p class="content">Conteudo</p>
+        <p class="avaliation">Avaliacao</p>
+        <p class="commentary">Comentario</p>
+      </section>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
     </main>
-    <section id="form-data">
-      <p class="name">Nome e sobrenome</p>
-      <p class="email">email</p>
-      <p class="house">Casa</p>
-      <p class="family">Familia</p>
-      <p class="content">Conteudo</p>
-      <p class="avaliation">Avaliacao</p>
-      <p class="commentary">Comentario</p>
-    </section>
     <footer>
       <p>Direitos reservados à Trybewarts©</p>
     </footer>
